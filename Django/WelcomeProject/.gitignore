@@ -1,0 +1,51 @@
+# Python
+# Compiled source
+__pycache__
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+.eggs/
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+.Python
+build/
+dist/
+wheels/
+share/python-wheels/
+*.whl
+*.egg
+
+# Technologies
+.tox/
+.nox/
+
+# IDEs and editors
+.idea/  # For PyCharm and other JetBrains IDEs
+.vscode/ # For VS Code
+*.swp
+*.bak
+*.tmp
+
+# Misc
+pip-log.txt
+pip-delete-this-line.txt
+htmlcov/
+.coverage
+.mypy_cache/
+.pytest_cache/
+.pyre/
+.idle-sync/
+pylint.txt
+.ropeproject/
+.lgtm.yml
+.project
+save_data.json
