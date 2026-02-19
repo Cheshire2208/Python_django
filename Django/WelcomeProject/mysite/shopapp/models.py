@@ -2,6 +2,8 @@ from django.contrib.auth.models import User
 from django.db import models
 
 
+
+
 class Product(models.Model):
     class Meta:
         ordering = ["-name"]
@@ -15,6 +17,14 @@ class Product(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     archived = models.BooleanField(default=False)
 
+    # @property
+    # def description_short(self) -> str:
+    #     if len(self.description)<48:
+    #         return self.description
+    #     return self.description[:48] + "..."
+
+    def __str__(self) -> str:
+        return f"Product(pk={self.pk}, name={self.name!r})"
 
 class Order(models.Model):
     delivery_address = models.TextField(null=True, blank=True)
